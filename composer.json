@@ -16,9 +16,10 @@
         "philadelphia/database": "^1.0.0",
         "philadelphia/helpers": "^1.0.0"
     },
+    "autoload": {},
     "extra": {
         "branch-alias": {
-            "dev-master": "1.0.0"
+            "master": "1.0.0-dev"
         }
     },
     "minimum-stability": "dev"
