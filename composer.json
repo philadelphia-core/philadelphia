@@ -10,6 +10,7 @@
         }
     ],
     "scripts": {
+        "lint": "php server.php -l",
         "start": "php -S localhost:8081 server.php"
     },
 	"autoload": {
@@ -18,13 +19,43 @@
 			"app/routes",
 			"app/services"
 		]
-	},
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../app",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "../database",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "../router",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "../helpers",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
     "require": {
         "php": ">=5.6.9",
-        "philadelphia/app": "^1.0.0",
-        "philadelphia/router": "^1.0.0",
-        "philadelphia/database": "^1.0.0",
-        "philadelphia/helpers": "^1.0.0"
+        "philadelphia/app": "@dev",
+        "philadelphia/router": "@dev",
+        "philadelphia/database": "@dev",
+        "philadelphia/helpers": "@dev"
     },
     "extra": {
         "branch-alias": {

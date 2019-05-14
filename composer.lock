@@ -4,25 +4,19 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2a9dc628f793a42f14bb38ea1408b9be",
+    "content-hash": "1ec2e4652506b55891cb38535c9db597",
     "packages": [
         {
             "name": "philadelphia/app",
             "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/philadelphia-core/app.git",
-                "reference": "a2c29446e7fbde62f8c03dad9ecd91910b9cce6a"
-            },
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/philadelphia-core/app/zipball/a2c29446e7fbde62f8c03dad9ecd91910b9cce6a",
-                "reference": "a2c29446e7fbde62f8c03dad9ecd91910b9cce6a",
-                "shasum": ""
+                "type": "path",
+                "url": "../app",
+                "reference": "80209cadbbf6ffa1601560a4a2d65f2a6563ae4e"
             },
             "require": {
-                "philadelphia/helpers": "^1.0.0",
-                "philadelphia/router": "^1.0.0",
+                "philadelphia/helpers": "@dev",
+                "philadelphia/router": "@dev",
                 "php": ">=5.6.9"
             },
             "type": "project",
@@ -36,7 +30,6 @@
                     "PhiladelPhia\\App\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -50,25 +43,21 @@
             ],
             "description": "The PhiladelPhia App package.",
             "homepage": "https://philadelphia.com",
-            "time": "2019-05-13T19:21:12+00:00"
+            "transport-options": {
+                "symlink": true
+            }
         },
         {
             "name": "philadelphia/database",
             "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/philadelphia-core/database.git",
-                "reference": "8a0b8e9b8e0033f36634f7267908708740e3ac64"
-            },
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/philadelphia-core/database/zipball/8a0b8e9b8e0033f36634f7267908708740e3ac64",
-                "reference": "8a0b8e9b8e0033f36634f7267908708740e3ac64",
-                "shasum": ""
+                "type": "path",
+                "url": "../database",
+                "reference": "5388aee39f95facc69bb1633734ca7f1b3152511"
             },
             "require": {
-                "philadelphia/app": "^1.0.0",
-                "philadelphia/helpers": "^1.0.0",
+                "philadelphia/app": "@dev",
+                "philadelphia/helpers": "@dev",
                 "php": ">=5.6.9"
             },
             "type": "library",
@@ -82,7 +71,6 @@
                     "PhiladelPhia\\Database\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -96,24 +84,20 @@
             ],
             "description": "The PhiladelPhia Database package.",
             "homepage": "https://philadelphia.com",
-            "time": "2019-05-13T18:25:02+00:00"
+            "transport-options": {
+                "symlink": true
+            }
         },
         {
             "name": "philadelphia/helpers",
             "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/philadelphia-core/helpers.git",
-                "reference": "8c3d1f7c6fe2df98e3da1e0c583b005caf6152db"
-            },
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/philadelphia-core/helpers/zipball/8c3d1f7c6fe2df98e3da1e0c583b005caf6152db",
-                "reference": "8c3d1f7c6fe2df98e3da1e0c583b005caf6152db",
-                "shasum": ""
+                "type": "path",
+                "url": "../helpers",
+                "reference": "87cfc5362cbc73f5d97e12ecf22741307dea05be"
             },
             "require": {
-                "philadelphia/app": "^1.0.0",
+                "philadelphia/app": "@dev",
                 "php": ">=5.6.9"
             },
             "type": "library",
@@ -127,7 +111,6 @@
                     "PhiladelPhia\\Helpers\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -141,24 +124,20 @@
             ],
             "description": "The Philadelphia Helpers package.",
             "homepage": "https://philadelphia.com",
-            "time": "2019-05-13T18:22:44+00:00"
+            "transport-options": {
+                "symlink": true
+            }
         },
         {
             "name": "philadelphia/router",
             "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/philadelphia-core/router.git",
-                "reference": "a199a7c5f20ce5ec8e746c29482d0dfac6c3e085"
-            },
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/philadelphia-core/router/zipball/a199a7c5f20ce5ec8e746c29482d0dfac6c3e085",
-                "reference": "a199a7c5f20ce5ec8e746c29482d0dfac6c3e085",
-                "shasum": ""
+                "type": "path",
+                "url": "../router",
+                "reference": "a93dfe0f26496b260ec0091e0707c629bece893c"
             },
             "require": {
-                "philadelphia/helpers": "^1.0.0",
+                "philadelphia/helpers": "@dev",
                 "php": ">=5.6.9"
             },
             "type": "library",
@@ -172,7 +151,6 @@
                     "PhiladelPhia\\Router\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -186,13 +164,20 @@
             ],
             "description": "The Philadelphia Router package.",
             "homepage": "https://philadelphia.com",
-            "time": "2019-05-13T18:24:54+00:00"
+            "transport-options": {
+                "symlink": true
+            }
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "philadelphia/app": 20,
+        "philadelphia/router": 20,
+        "philadelphia/database": 20,
+        "philadelphia/helpers": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

@@ -6,13 +6,10 @@
   use PhiladelPhia\Router\Router;
 
   $app = new App();
-
-  $app->setting('./settings.ini');
   
   $app->get('/api', function($request, $response) {
     $response->json(array('Hello' => 'World'));
   });
-
   
   $userRouter = require_once __DIR__.'/app/routes/users.php';
   $app->use('/api/users', $userRouter);

@@ -2,6 +2,6 @@
 
   use PhiladelPhia\Database\Manager as Database;
   
-  $db = new Database;
+  $db = new Database('./settings.ini');
 
 
