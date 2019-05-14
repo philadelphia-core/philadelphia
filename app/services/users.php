@@ -1,8 +1,8 @@
 <?php
 
-  require 'app/models/users.php';
-
-  class UsersService 
+  class UsersService
   {
+    function find() {
 
+    }
   }

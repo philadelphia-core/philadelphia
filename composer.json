@@ -15,9 +15,7 @@
     },
 	"autoload": {
 		"classmap": [
-			"app/models",
-			"app/routes",
-			"app/services"
+			"app"
 		]
     },
     "repositories": [
