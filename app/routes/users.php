@@ -1,6 +1,6 @@
 <?php
   
-  require_once 'app/models/users.php';
+  require_once 'app/services/users.php';
 
   use PhiladelPhia\Router\Router;
 

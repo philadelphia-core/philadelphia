@@ -1,7 +1,11 @@
 <?php
 
-  use PhiladelPhia\Database\Manager as Database;
-  
-  $db = new Database('./settings.ini');
+  require "bootstrap.php";
+    
+  use PhiladelPhia\Database\Model;
 
+  class Users extends Model
+  {
+
+  }
 
