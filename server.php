@@ -7,6 +7,7 @@
 
   $app = new App();
 
+  $app->setting('./settings.ini');
   
   $app->get('/api', function($request, $response) {
     $response->json(array('Hello' => 'World'));

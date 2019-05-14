@@ -1,12 +1,12 @@
 <?php
   
+  require_once 'app/models/users.php';
+
   use PhiladelPhia\Router\Router;
-  use PhiladelPhia\Interfaces\RequestInterface as IRequest;
-  use PhiladelPhia\Interfaces\ResponseInterface as IResponse;
 
   $router = new Router;
 
-  $router->get('/', function(IRequest $request, IResponse $response) {
+  $router->get('/', function($request, $response) {
     $response->json(array('Hello' => 'User'));
   });
 
