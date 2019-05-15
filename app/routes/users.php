@@ -3,13 +3,12 @@
   use PhiladelPhia\Router\Router;
 
   $router = new Router;
+  $users = new UsersService; 
 
   $router->get('/', function($request, $response) {
-    $users = new Users;
+    global $users;
 
-    $users->find();
-
-    $response->json(array('Hello' => 'User'));
+    $response->json($users->find());
   });
 
   return $router;
