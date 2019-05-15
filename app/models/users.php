@@ -6,8 +6,5 @@
 
   class Users extends Model
   {
-    function find() {
-      var_dump(static::$instance);
-    }
   }
 

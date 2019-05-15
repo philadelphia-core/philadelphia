@@ -5,10 +5,8 @@
   $router = new Router;
 
   $router->get('/', function($request, $response) {
-    $users = new Users;
-
+    $users = new UsersService;
     $users->find();
-
     $response->json(array('Hello' => 'User'));
   });
 

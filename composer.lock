@@ -1,18 +1,19 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
     "content-hash": "1ec2e4652506b55891cb38535c9db597",
     "packages": [
         {
             "name": "philadelphia/app",
-            "version": "dev-master",
+            "version": "9999999-dev",
             "dist": {
                 "type": "path",
                 "url": "../app",
-                "reference": "80209cadbbf6ffa1601560a4a2d65f2a6563ae4e"
+                "reference": "c8e223e5e72d636c516871d6f644452a8b996f1e",
+                "shasum": null
             },
             "require": {
                 "philadelphia/helpers": "@dev",
@@ -49,11 +50,12 @@
         },
         {
             "name": "philadelphia/database",
-            "version": "dev-master",
+            "version": "9999999-dev",
             "dist": {
                 "type": "path",
                 "url": "../database",
-                "reference": "5388aee39f95facc69bb1633734ca7f1b3152511"
+                "reference": "1da4a660b82bed8cdc90a79f166f7add95422f12",
+                "shasum": null
             },
             "require": {
                 "philadelphia/app": "@dev",
@@ -90,11 +92,12 @@
         },
         {
             "name": "philadelphia/helpers",
-            "version": "dev-master",
+            "version": "9999999-dev",
             "dist": {
                 "type": "path",
                 "url": "../helpers",
-                "reference": "87cfc5362cbc73f5d97e12ecf22741307dea05be"
+                "reference": "4de03176aaed122806c702c9d87c523c7453dd0c",
+                "shasum": null
             },
             "require": {
                 "philadelphia/app": "@dev",
@@ -130,11 +133,12 @@
         },
         {
             "name": "philadelphia/router",
-            "version": "dev-master",
+            "version": "9999999-dev",
             "dist": {
                 "type": "path",
                 "url": "../router",
-                "reference": "a93dfe0f26496b260ec0091e0707c629bece893c"
+                "reference": "1f9587383d21743bbf3a7ed09c7228f57241e356",
+                "shasum": null
             },
             "require": {
                 "philadelphia/helpers": "@dev",
