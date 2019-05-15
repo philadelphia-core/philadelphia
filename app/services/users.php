@@ -2,10 +2,6 @@
 
   class UsersService
   {
-<<<<<<< HEAD
-    function find() {
-      $users = new Users;
-=======
     function __construct()
     {
       $this->users = new Users;
@@ -25,6 +21,5 @@
       //               ->skip($skip)
       //               ->orderBy($sort)
       //               ->get();
->>>>>>> c49d67d8af25c234c6735440fcb56cd51d0c524b
     }
   }
