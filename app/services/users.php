@@ -7,19 +7,32 @@
       $this->users = new Users;
     }
 
-    function find($where = null, $sort = null, $limit = 10, $skip = 0, $page = 0) 
+    function find(
+                  array $where = null, 
+                  string $sort = 'id', 
+                  int $limit = 10, 
+                  int $skip = 0, 
+                  int $page = 0) 
     {
       $users = $this->users;
-      return $users::find([1, 2]);
-      // if (!empty($where))
-      // {
-      //   $users->where($where);
-      // }
 
-      // return $users
-      //               ->limit($limit)
-      //               ->skip($skip)
-      //               ->orderBy($sort)
-      //               ->get();
+      if (empty($where))
+      {
+        $where = [];
+      }
+      
+      return $users::where($where)
+                    ->limit($limit)
+                    ->skip($skip)
+                    ->orderBy($sort)
+                    ->get();
+    }
+
+    function findById(string $id)
+    {
+      $users = $this->users;
+
+      return $users::where('id', $id)
+                    ->first();
     }
   }
