@@ -8,14 +8,20 @@
   $router->get('/', function($request, $response) {
     global $users;
 
-    $response->json($users->find());
+    $res = $users->find(['name', 'like', '%fer%']);
+    $response->json(array(
+      'items' => $res,
+      'count' => count($res)
+    ));
   });
 
   $router->get('/id/{:id}', function($request, $response) {
     global $users;
     $params = $request->params;
 
-    $response->json($users->findById($params->id));
+    $response->json(array(
+      'item' => $users->findById($params->id)
+    ));
   });
 
   return $router;
