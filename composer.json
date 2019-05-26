@@ -16,7 +16,8 @@
     ],
     "scripts": {
         "lint": "php server.php -l",
-        "start": "php -S localhost:8081 server.php"
+        "start": "php -S localhost:8080 server.php",
+        "start-public": "php -S 0.0.0.0:8081 -t ./public"
     },
 	"autoload": {
 		"classmap": [
@@ -28,7 +29,8 @@
         "philadelphia/app": "1.0.0",
         "philadelphia/router": "1.0.0",
         "philadelphia/database": "1.0.0",
-        "philadelphia/helpers": "1.0.0"
+        "philadelphia/helpers": "1.0.0",
+        "firebase/php-jwt": "^5.0"
     },
     "extra": {
         "branch-alias": {
