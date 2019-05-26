@@ -1,8 +1,13 @@
 {
     "name": "philadelphia/philadelphia",
+    "type": "project",
     "description": "The PhiladelPhia is a FrameWork for PHP",
-    "homepage": "https://philadelphia.com",
+    "keywords": [
+        "framework",
+        "philadelphia"
+    ],
     "license": "MIT",
+    "homepage": "https://philadelphia.com",
     "authors": [
         {
             "name": "Fernando Fernandez",
@@ -55,6 +60,7 @@
         "philadelphia/database": "@dev",
         "philadelphia/helpers": "@dev"
     },
+    "prefer-stable": true,
     "extra": {
         "branch-alias": {
             "dev-master": "1.0.0-dev"
