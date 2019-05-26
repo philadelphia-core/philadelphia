@@ -24,11 +24,11 @@
 		]
     },
     "require": {
-        "php": ">=5.6.9",
-        "philadelphia/app": "1.0.0",
-        "philadelphia/router": "1.0.0",
-        "philadelphia/database": "1.0.0",
-        "philadelphia/helpers": "1.0.0"
+        "php": "^=5.6.9",
+        "philadelphia/app": "^1.0.0",
+        "philadelphia/router": "^1.0.0",
+        "philadelphia/database": "^1.0.0",
+        "philadelphia/helpers": "^1.0.0"
     },
     "extra": {
         "branch-alias": {
@@ -36,8 +36,9 @@
         }
     },
     "config": {
-        "process-timeout": 0
+        "process-timeout": 0,
+        "sort-packages": true
 	},
-    "prefer-stable": true,
-    "minimum-stability": "dev"
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }
