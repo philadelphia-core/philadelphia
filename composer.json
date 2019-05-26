@@ -25,10 +25,10 @@
     },
     "require": {
         "php": "^5.6.9",
-        "philadelphia/app": "^1.0.0",
-        "philadelphia/router": "^1.0.0",
-        "philadelphia/database": "^1.0.0",
-        "philadelphia/helpers": "^1.0.0"
+        "philadelphia/app": "@dev",
+        "philadelphia/router": "@dev",
+        "philadelphia/database": "@dev",
+        "philadelphia/helpers": "@dev"
     },
     "extra": {
         "branch-alias": {
