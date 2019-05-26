@@ -32,7 +32,7 @@ import '@polymer/app-layout/app-header/app-header.js';
 import '@polymer/app-layout/app-scroll-effects/effects/waterfall.js';
 import '@polymer/app-layout/app-toolbar/app-toolbar.js';
 import { menuIcon } from './my-icons.js';
-import './snack-bar.js';
+import '../components/snack-bar.js';
 
 class MyApp extends connect(store)(LitElement) {
   static get properties() {
@@ -85,8 +85,8 @@ class MyApp extends connect(store)(LitElement) {
         }
 
         [main-title] {
-          font-family: 'Pacifico';
-          text-transform: lowercase;
+          font-family: 'Lobster';
+          text-transform: capitalize;
           font-size: 30px;
           /* In the narrow layout, the toolbar is offset by the width of the
           drawer button, and the text looks not centered. Add a padding to
