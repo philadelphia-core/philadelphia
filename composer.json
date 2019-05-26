@@ -30,6 +30,11 @@
         "philadelphia/database": "^1.0.0",
         "philadelphia/helpers": "^1.0.0"
     },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    },
     "config": {
         "process-timeout": 0,
         "sort-packages": true
