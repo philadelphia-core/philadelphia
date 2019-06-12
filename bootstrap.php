@@ -2,4 +2,6 @@
 
   use PhiladelPhia\Database\Manager as Database;
   
-  $con = new Database('./settings.ini');
+  require_once './config/config.php';
+
+  $con = new Database;

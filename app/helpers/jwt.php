@@ -1,12 +1,8 @@
 <?php
   
-  use Firebase\JWT\JWT as JWToken;
-  use PhiladelPhia\App\Settings;
-
-  $settings = new Settings('./settings.ini');
+  use Firebase\JWT\JWT as JsonWebToken;
 
   class JWT {
-    
     public static function create_tokenId() : string {
       $byte = openssl_random_pseudo_bytes(32);
       return base64_encode($byte);
@@ -22,7 +18,7 @@
       $data_token = [
         'iat' => $issuedAt,
         'jti' => $tokenId,
-        'iss' => $settings->get('jwt.host'),
+        'iss' => JWT['iss'],
         'nbf' => $notBefore,
         'exp' => $expire,
         'data' => [
@@ -31,19 +27,19 @@
         ]
       ];
 
-      $jwt = JWToken::encode(
+      $jwt = JsonWebToken::encode(
                     $data_token, 
-                    $settings->get('jwt.privateKey'), 
-                    $settings->get('jwt.algorithm'));
+                    JWT['privateKey'], 
+                    JWT['algorithm']);
 
       return ['token' => $jwt, 'refresh_token' => self::create_tokenId()];
     }
 
     public static function decode(string $jwt) {
-      $decode = JWToken::decode(
+      $decode = JsonWebToken::decode(
                       $jwt, 
-                      $settings->get('jwt.privateKey'),
-                      array($settings->get('jwt.algorithm')));
+                      JWT['privateKey'],
+                      array(JWT['algorithm']));
 
       return $decode;
     }
